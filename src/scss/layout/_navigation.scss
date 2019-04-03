@@ -1,0 +1,111 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #284664 !important;
+    .row {
+        width: 100%;
+    }
+
+    .navbar-nav {
+        a {
+           
+            color: #fff !important;
+            font-size: 1.3em;
+
+            &:hover,
+            &:active {
+                color: #fff;
+            }
+        }
+        li{
+           a{
+            cursor: pointer;
+           }
+            &:hover{
+                .sub-menu{
+                    opacity: 1;
+                    visibility: visible;
+                    margin-top: 8px;
+                }
+            }
+        }
+        .sub-menu{
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            height: auto;
+            // background-color: #284664;
+            visibility: hidden;
+            z-index: 9999;
+            -moz-transition: all ease 0.2s;
+            -o-transition: all ease 0.2s;
+            -webkit-transition: all ease 0.2s;
+            transition: all ease 0.2s;
+            opacity: 0;
+            font-family: "Nunito",sans-serif;
+            padding: 0px 0px;
+            margin-top: 28px;
+            box-shadow: 4px 5px 5px 0px rgba(0,0,0,0.3);
+            background-color: #536b83;
+            top: 100%;
+            ul{
+                margin: 0px;
+    padding: 0px;
+            }
+            li{
+                margin: 0px 30px 0px 0px;
+                display: inline-block;
+                padding: 0px;
+                float: none;
+                a{
+                    display: block;
+                    line-height: 20px;
+                    text-align: left;
+                    text-transform: none;
+                    padding: 0px 5px !important;
+                    line-height: 50px;
+                    font-size: 14px;
+                    font-weight: 300;
+                    -moz-transition: all ease 0.2s;
+                    -o-transition: all ease 0.2s;
+                    -webkit-transition: all ease 0.2s;
+                    transition: all ease 0.2s;
+                    color: #7e90a2 !important;
+                    letter-spacing: 1px;
+                    float: none;
+                    font-weight: 800;
+                    &:hover{
+                        text-decoration: none;
+                        color: #fff !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .social-icon {
+        li {
+            display: inline-block;
+
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+
+            i {
+                font-size: 30px;
+            }
+            a{
+                font-size: 1.2em;
+                line-height: 1.7;
+                font-weight: bold;
+                color: #fff;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+
+        }
+    }
+
+}
